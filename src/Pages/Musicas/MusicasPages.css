@@ -1,0 +1,98 @@
+/* css gerais */
+.musicas-pages {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.musicas-pages a {
+    color: white;
+}
+
+/* tamanho das letras de texto */
+.container-musicas_box, .container-musicas_artistas {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 10px auto;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+.container-musicas_box p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* box do slide dos videos */
+.container-slide_musicas {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Barra horizontal do navegador */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+
+/* layout desktop */
+@media (min-width: 800px) {
+    /* tamanho do video */
+    iframe {
+        width: 550px;
+        border-radius: 10px;
+    }
+
+    /* caixa de slide quando a tela ficar mobile */
+    .container-box_slide {
+        overflow-x: auto;
+    }
+
+    /* tamanho das caixas com texto dentro */
+    .container-musicas_box {
+        width: 700px;
+    }
+
+    .container-musicas_artistas {
+        width: 700px;
+    }
+
+}
+
+/* layout mobile */
+@media (max-width: 799px) {
+    /* com navbar em fixed temos que dar uma margin top para não ficar encima do titulo */
+    .musicas-pages {
+        margin-top: 80px;
+    }
+
+    /* tamanho do video */
+    iframe {
+        width: 370px;
+        border-radius: 10px; 
+        z-index: 1;
+    }
+
+    /* caixa de slide quando a tela ficar mobile */
+    .container-box_slide {
+        overflow-x: auto;
+    }
+
+    /* tamanho das caixas com texto dentro */
+    .container-musicas_box {
+        width: 350px;
+    }
+
+    .container-musicas_artistas {
+        width: 350px;
+    }
+}

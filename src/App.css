@@ -1,0 +1,63 @@
+/* determinações gerais */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.App {
+  height: 100vh;
+}
+
+.btn {
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  height: 50px;
+  font-size: 1.2em;
+  background-color: #ff0301;
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #ff0301;
+  color: white;
+  transition: 1s;
+}
+
+/* determinando span title  */
+.span-title {
+  font-size: 2em;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  
+  .navbar-lateral {
+    width: 400px;
+    background-color: black;
+    height: 100vh;
+    border-right: 2px solid #ff0301;
+  }
+
+  .App {
+    display: flex;
+  }
+
+  .conteudo-app {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+}

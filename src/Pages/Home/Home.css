@@ -1,0 +1,150 @@
+/* funçoes gerais */
+.home {
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+
+/* fazendo a imagem rodar na tela home */
+.imgrotate {
+    animation: imgrotate 10s linear infinite;
+}
+
+@keyframes imgrotate {
+
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.nome-banda img {
+    width: 100%;
+}
+
+/* about da banda */
+.about-banda {
+    color: lightgrey;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 20px;
+    z-index: 3;
+}
+
+/* pagina home para desktop */
+@media (min-width: 800px) {
+
+    /* imagem da logo na pagina home */
+    .box-img-home-logo img {
+        border-radius: 20px;
+        width: 70%;
+        height: 400px;
+    }
+
+    .home {
+        height: 100vh;
+        background-color: black;
+        /*background-size: 100% 100%;
+        background-image: url('https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2019/07/a6b639d-slipknot.png');
+        background-repeat: no-repeat;*/
+    }
+
+    .container-home {
+        height: 92vh;
+    }
+
+    /* imagem nome da banda */
+    .nome-banda {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* determinando o simbolo no meio da tela home */
+    .img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .img img {
+        width: 500px;
+    }
+
+    .nome-banda {
+        width: 700px;
+    }
+
+    /* tamanho da tela no desktop */
+
+    .container-imagens-banda {
+        height: 80vh;
+    }
+}
+
+
+/* pagina home para mobile */
+@media (max-width: 799px) {
+    
+    /* imagem da logo na pagina home */
+    .box-img-home-logo img {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .home {
+        background-color: black;
+        height: 100vh;
+    }
+    /* imagem nome da banda */
+    .nome-banda {
+        width: 350px;
+    }
+
+    .container-imagens-banda {
+        height: 50vh;
+    }
+
+    /* imagem nome da banda */
+    .nome-banda {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* determinando o simbolo no meio da tela home */
+    .img {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* about banda */
+    .about-banda {
+        margin-bottom: 30px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .img img {
+        width: 280px;
+    }
+}
